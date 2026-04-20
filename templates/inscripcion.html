@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción · Rift Champions Cup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section class="form-section" style="min-height:100vh; display:flex; align-items:center;">
+        <div class="form-wrap" style="width:100%">
+            <p class="section-title" style="text-align:center">Únete al torneo</p>
+            <h2 class="section-heading" style="text-align:center; margin-bottom:2rem">Formulario de Inscripción</h2>
+
+            <div class="form-card-main">
+                <form action="/inscripcion" method="POST">
+                    <div class="form-grid-2">
+                        <div class="field">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="field">
+                            <label for="invocador">Nick de invocador</label>
+                            <input type="text" id="invocador" name="invocador" placeholder="NombreRift#LAS" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+                    <div class="form-grid-2">
+                        <div class="field">
+                            <label for="rango">Rango actual</label>
+                            <select id="rango" name="rango" required>
+                                <option value="" disabled selected>Selecciona tu rango</option>
+                                <option>Plata</option>
+                                <option>Oro</option>
+                                <option>Platino</option>
+                                <option>Esmeralda</option>
+                                <option>Diamante</option>
+                                <option>Maestro+</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="equipo">Nombre del equipo</label>
+                            <input type="text" id="equipo" name="equipo" placeholder="Nombre de tu equipo" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">⚔️ Confirmar Inscripción</button>
+                </form>
+                <div style="text-align:center; margin-top:1.2rem">
+                    <a href="/" style="color:var(--muted); font-size:0.85rem; text-decoration:none;">← Volver al inicio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

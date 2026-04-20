@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Confirmada · Rift Champions Cup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="confirm-wrap">
+        <div class="confirm-card">
+            <div class="confirm-icon">⚔️</div>
+            <h1>¡Invocador Registrado!</h1>
+            <p>
+                Bienvenido al campo de batalla, <span class="confirm-name">{{ nombre }}</span>.<br>
+                Tu inscripción en la <strong>Rift Champions Cup 2026</strong> ha sido confirmada.
+                Revisa tu correo para más detalles.
+            </p>
+            <p style="font-size:0.82rem; color: var(--muted); margin-bottom:1.5rem;">
+                📅 Fecha: 15 de Mayo, 2026 · 10:00 AM · Servidor LAS
+            </p>
+            <a href="/" class="btn-volver">← Volver al inicio</a>
+        </div>
+    </div>
+</body>
+</html>

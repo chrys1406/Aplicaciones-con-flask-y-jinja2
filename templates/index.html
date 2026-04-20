@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rift Champions Cup 2026</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+        <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/static/bg.jpg') center/cover no-repeat;">
+        <div class="hero-grid"></div>
+        <div class="hero-badge">Torneo Oficial · Temporada 2026</div>
+        <h1>
+            Rift Champions Cup
+            <span>League of Legends</span>
+        </h1>
+        <div class="hero-divider"></div>
+        <p class="hero-desc">
+            El torneo universitario más grande de la región. Demuestra tu habilidad en el Rift
+            y compite por la gloria, los premios y el título de campeón.
+        </p>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num">32</div>
+                <div class="stat-label">Equipos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">$2K</div>
+                <div class="stat-label">En premios</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">{{ total }}</div>
+                <div class="stat-label">Inscritos</div>
+            </div>
+        </div>º
+        <p class="hero-detalles">📞 Detalles al <strong>68123166</strong></p>
+        <a href="/inscripcion" class="btn-inscribir">⚔️ Inscríbete Ahora</a>
+    </section>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

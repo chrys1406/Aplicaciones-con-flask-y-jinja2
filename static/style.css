@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Exo+2:wght@300;400;500&display=swap');
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Exo 2', sans-serif;
+    background: #0a0700;
+    color: #f0e8d0;
+}
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+.hero-grid { display: none; }
+.hero-badge {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: #e8a820;
+    border: 1px solid #e8a82055;
+    padding: 0.4rem 1rem;
+    margin-bottom: 1.5rem;
+}
+.hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: #f5d27a;
+}
+.hero h1 span {
+    display: block;
+    font-size: 0.5em;
+    color: #3ecfb2;
+    letter-spacing: 5px;
+    margin-top: 0.3rem;
+}
+.hero-divider {
+    width: 100px;
+    height: 2px;
+    background: #e8a820;
+    margin: 1.5rem auto;
+}
+.hero-desc { color: #a09070; font-size: 0.95rem; max-width: 500px; line-height: 1.7; }
+.hero-stats { display: flex; gap: 3rem; margin: 2rem 0; }
+.stat-num { font-family: 'Cinzel', serif; font-size: 2rem; color: #f5d27a; }
+.stat-label { font-size: 0.7rem; color: #a09070; letter-spacing: 2px; text-transform: uppercase; }
+.hero-detalles { font-size: 0.85rem; color: #a09070; margin-bottom: 1.5rem; }
+.btn-inscribir {
+    font-family: 'Cinzel', serif;
+    background: #e8a820;
+    color: #0a0700;
+    padding: 0.9rem 2.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+.btn-inscribir:hover { background: #f5d27a; }
+/* FORMULARIO */
+.form-section { padding: 4rem 1.5rem; background: #0a0700; }
+.form-wrap { max-width: 580px; margin: 0 auto; }
+.section-title { font-size: 0.75rem; color: #e8a820; letter-spacing: 3px; text-transform: uppercase; }
+.section-heading { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #f0e8d0; margin: 0.5rem 0 2rem; }
+.form-card-main { border: 1px solid #e8a82040; border-top: 2px solid #e8a820; padding: 2rem; border-radius: 4px; }
+.field { margin-bottom: 1.2rem; }
+.field label { display: block; font-size: 0.75rem; color: #e8a820; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.4rem; }
+.field input, .field select { width: 100%; background: #150f02; border: 1px solid #e8a82040; border-radius: 3px; padding: 0.7rem 1rem; color: #f0e8d0; font-family: 'Exo 2', sans-serif; font-size: 0.95rem; outline: none; }
+.field input:focus, .field select:focus { border-color: #e8a820; }
+.field select option { background: #150f02; }
+.form-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.btn-submit { width: 100%; background: #e8a820; color: #0a0700; border: none; padding: 0.9rem; font-family: 'Cinzel', serif; font-weight: 700; font-size: 0.9rem; letter-spacing: 2px; cursor: pointer; border-radius: 3px; margin-top: 0.5rem; }
+.btn-submit:hover { background: #f5d27a; }
+
+/* CONFIRMACION */
+.confirm-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+.confirm-card { border: 1px solid #e8a82040; border-top: 2px solid #e8a820; padding: 2.5rem; text-align: center; max-width: 460px; border-radius: 4px; }
+.confirm-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.confirm-card h1 { font-family: 'Cinzel', serif; color: #f5d27a; font-size: 1.5rem; margin-bottom: 0.5rem; }
+.confirm-card p { color: #a09070; font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem; }
+.confirm-name { color: #f5d27a !important; font-weight: 600; }
+.btn-volver { font-family: 'Cinzel', serif; font-size: 0.8rem; color: #e8a820; border: 1px solid #e8a82050; padding: 0.6rem 1.5rem; text-decoration: none; border-radius: 2px; letter-spacing: 2px; }
+.btn-volver:hover { background: #e8a820; color: #0a0700; }
+@media (max-width: 640px) {
+    .hero-stats { gap: 1.5rem; }
+    .form-grid-2 { grid-template-columns: 1fr; }
+}
